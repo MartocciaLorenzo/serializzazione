@@ -36,7 +36,7 @@ public class Generatore implements Runnable{
             try {
                 Studente s = new Studente(GeneraNome(), GeneraCognome(), GeneraNumero());
                 System.out.println("Thread n. "+i +"//"+s.ToString());
-                Thread.sleep(1000);
+                Thread.sleep(500);
                 i++;
             } catch (InterruptedException ex) {
                 Logger.getLogger(Generatore.class.getName()).log(Level.SEVERE, null, ex);
